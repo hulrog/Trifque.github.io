@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Garamond, Arial, Helvetica, sans-serif, Dorovar Carolus;
+}
+
+#menu{ 
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+}
+
+#menilista{ 
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#menilista>li{
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+#menilista>li>a{
+    text-decoration: none;
+    color: rgb(7, 0, 7);
+    transition-duration: 0.5s;
+}
+#menilista>li>a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 3);
+}
+
+#sve{
+    display: flex;
+    flex-direction: row;
+}
+
+#levo{
+    background-color: black;
+    flex: 1;
+    order: 1;
+    transition-duration: 0.5s;
+
+}
+#desno{
+    background-color: black;
+    flex: 1;
+    order: 3;
+    transition-duration: 0.5s;
+
+}
+
+/* SAD JE SVE DO KRAJA POD DIVOM SREDINA */
+
+#sredina{
+    flex: 8;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(110, 85, 68, 1);
+    order: 2;
+}
+
+
+
+/* podesen naslov da bude na centru boja i ostalo*/
+#naslov{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(110, 85, 68, 1);
+    
+}
+#naslov>h1{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 300%;
+    font-weight: bold;
+   
+}
+
+#beholder{
+    display: flex;
+    justify-content: center;
+    
+}
+#beholder>img{
+    width:1000px;
+}
+
+#mapa{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#rase {
+    display: flex;
+    justify-content:center;
+    color:black;
+    font-style: italic;
+    padding-top: 15px;
+}
+
+#tabela{
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-gap :20px;
+}
+#maincontainer{
+    display:inline;
+    position: relative;
+    width : 250px;
+    height: 320px; 
+}
+
+#card{
+    position:relative;
+    width:100%;
+    height : 100%;
+    transform-style: preserve-3d;
+    transition:all 0.5s ease;
+    
+}
+
+#front{
+    display: flex;
+    justify-content:center;
+    position:absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:white;
+}
+#back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140%;
+    color: rgb(2, 0, 0);
+    position:absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:white;
+    color:black;
+    transform: rotateY(180deg);
+    
+}
+#card:hover{
+    transform:rotateY(180deg);
+}
+#opis{
+    font-size: 150%;
+    margin: 2% 1%;
+    color: white;
+}
+#igra{
+    padding: 0;
+    margin: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%vw;
+    height: 50vh;
+    background-color: #333;
+}
+.container{
+    width: 1000px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    font-size: 150%;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn{
+    background-color: hsl(200,100%,50%);
+    border: 1px solid hsl(200,100%,50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:white;
+    outline: none;
+    font-size: 120%;
+}
+.btn:hover{
+    border-color: black;
+}
+#KRAJ{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#pocetak{
+    font-size:150%;
+    font-weight: bold;
+    background-color: blue;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    transition-duration: 0.5s;
+    border: none;
+    border-radius: 50px;
+}
+#pocetak:hover{
+    background-color: white;
+    color: black;
+    font-size: 170%;
+}
+

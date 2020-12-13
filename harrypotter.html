@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="CSS/HarryPotter/harrypotter.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script  src="JS/HarryPotter/harrypotter.js"></script>
+  </head>
+
+<body>
+
+
+    <div id="menu">
+        <ul id="menilista">
+            <li><a href="starwars.html">Star Wars</a></li>
+            <li><a href="harrypotter.html">Harry Potter</a></li>
+            <li><a href="dnd.html">Dungeon & Dragons</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div id="sve"> <!--sve osim menija-->
+        <div id="levo"> <!-- sa strane na sjatu ima prazan prostor levo i desno -->
+    
+        </div>
+
+        <div id="desno">
+
+        </div>
+
+        <div id="sredina"> 
+            <div id="naslov">
+                <h1> <i>Čarobnjački Svet Harija Potera</i> </h1>
+            </div>
+
+            <div id="hogwarts">
+                <img src="Slike/HarryPotter/hogwarts.jpg">
+            </div>
+
+            <div id="opis"> <!-- tekst o istoriji sveta -->
+
+                <p>
+                    Pored poznatog, dosadnog, svakodnevnog života Normalaca (običnih ljudi) postoji još jedan
+                    čitav skriveni svet magije. Na celoj planeti postoje porodice, društva,
+                    čak i paralelne vlade i države, u kojima žive i rade Čarobnjaci i Veštice,
+                    rođeni sa darom da koriste magiju.
+                    <br>
+                    U knjigama je prikazana jedna takva zajednica Čarobnjaka u Britaniji, gde postoji
+                    Ministarstvo Magije. Ono je zaduženo za bezbednost i tajnost čarobnjačkih porodica,
+                    jer po Međunarodnom Statutu Tajnosti - Čarobnjaci moraju da ostanu skriveni od očiju
+                    normalaca. U odnosu na mnogobrojne normalce, Čarobnjaka ima jako malo i postoji osnovan
+                    strah da bi ih normalci uništili ako bi im otkrili da postoje.    
+                </p>
+
+                <div id="svet">
+                    <img src="Slike/HarryPotter/downingstreet.jpg" width=50%>
+                    <img src="Slike/HarryPotter/ministryofmagic.jpg" width=50%>
+                </div>
+                <p>
+                    Postoje neki među Čarobnjacima koji ne veruju da treba da se kriju. Ističu svoju superiornost,
+                    na osnovu koje veruju da treba da Čarobnjaci treba da zagospodare svetom i porobe sve koji
+                    nisu kao oni. Oni su se kroz celu istoriju Čarobnjaštva zovu Mračni Čarobnjaci,
+                    a najveći mođu njima je Lord Voldemor. Poveo je svoje pratioce - Smrtoždere u veliki građanski
+                    rat. Mnogi su mu se suprotstavljali predvođeni Albusom Dambldorom, i mnogi su poginuli.
+                </p>
+
+                <div id="rat">
+                    <img src="SLike/HarryPotter/deatheaters.jpg" width = 50%>
+                    <img src="Slike/HarryPotter/dumbledore.jpg" width = 50%>
+                </div>
+                <p>
+                    Jedne noći Voldemor se lično uputio ka skrovištu u kome su se krili njegovi protivnici
+                    Džejms i Lili Poter i njihov sin Hari, koji je tada bio beba. Voldemor je lako
+                    ubio oboje Harijevih roditelja, ali kada je pokušao da ubije Harija, kletva se okrenula
+                    na njega. Hariju je ostao samo ožiljak na glavi, Voldemor je umro i rat je završen.
+                </p>
+
+            </div>
+
+            <div id="datumsmrti"> <!--ovde pise kolko je dana proslo od kako je voldemor umro prvi put-->
+                <p>
+                    Voldemor je prvi put umro pre: 
+                </p>
+            </div>
+
+            <div id="pismo"> <!--sve za pismo-->
+                <img id="sigil" src="Slike/HarryPotter/sigil.png" width = 30%>
+
+                <h1>Hogvorts škola za Veštice i Čarobnjake</h1>
+                <h1>Direktor: Albus Dambldor</h1>
+                <p>
+                    (Merlinov Red, Prve Klase, Veliki Magus, Gl. Volšebnik, 
+                    Vrhovni Poglavar, Međunarodna Konfed. Čarobnjaka)
+                </p>
+                <br>
+                <br>
+                <p>
+                    Dragi Posetioče,
+                </p>
+                <br>
+                <p>
+                    Drago nam je da vas obavestimo da ste dobili mesto u Hogvorts školi
+                    za Veštice i Čarobnjake. Molimo Vas da dođete do svih neophodnih knjiga
+                    i opreme.
+                    Semestar počinje 1. Septembra. Čekamo vašu sovu ne kasnije od 31. Jula.
+                    <br>
+                    <br>
+                    Iskreno Vaša, <br>
+                    Minerva Mekgonagal <br>
+                    Zamenica direktora
+                </p>
+                <br>
+                <button type="button" onclick="sortiranje()">Pristupite ceremoniji razvrstavanja</button>
+
+            </div>
+
+            <div id="sortiranje"> <!-- kad se na pismu klikne dugme, nestaje pismo pojavljuje se sortiranje -->
+                <img id="sortinghat" src="Slike/HarryPotter/sortinghat.webp" width=30%>
+
+                <p> 
+                    Razvrstavanje se obavlja prilikom svakog prijema nove generacije u Hogvorts.
+                    Na osnovu osobina ličnosti i vrednosti koje imate, šešir za razvrstavanje
+                    će vas smestiti u jednu od četiri kuća: 
+                    <br>
+                    <b> Grifindor, Sliterin, Haflpaf ili Revenklo </b>.
+                </p>
+
+                <div id="kuce">
+                    <img id="gryffindor" src="Slike/HarryPotter/gryffindor.png" height=300 width=300> 
+                    <img id="slytherin" src="Slike/HarryPotter/slytherin.png" height=300 width=300>
+                    <img id="hufflepuff" src="Slike/HarryPotter/hufflepuff.png" height=300 width=300>
+                    <img id="ravenclaw" src="Slike/HarryPotter/ravenclaw.png" height=300 width=300>
+                </div>  
+
+                <!-- <div id="kuce"> 
+                    <img id="gryffindor" src="Slike/HarryPotter/gryffindor.png" height=300 width=300 onclick = sortiranG()> 
+                    <img id="slytherin" src="Slike/HarryPotter/slytherin.png" height=300 width=300 onclick = sortiranS()>
+                    <img id="hufflepuff" src="Slike/HarryPotter/hufflepuff.png" height=300 width=300 onclick = sortiranH()>
+                    <img id="ravenclaw" src="Slike/HarryPotter/ravenclaw.png" height=300 width=300 onclick = sortiranR()>
+                </div>        kada treba da se otvori sortiranX() a da se ne odradi kviz -->
+
+                <div id="start">
+                    <p>Započnite kviz: </p>
+
+                    <button id="zapocnikvizDugme" type="button" onclick="start()"> Započni kviz </button>
+                </div>
+
+                <div id="pitanja"> <!-- za svako pitanje postoji poseban tekst, dugme i odgovor u html -->
+
+                    <div class="pitanjeKlasa" id="pitanje1">
+                        <div class = "textpitanja">
+                            1. Da ste učenik Hogvorts Škole, šta biste radili u slobodno vreme?
+                        </div>
+
+                        <div class = "odgovori">
+                            <button id="dugme11" onclick="dugme11()"> <b> Traženje magičnih stvorenja i Duhova. </b></button>
+                            <button id="dugme12" onclick="dugme12()"> <b>Učenje i usavršavanje svojih veština. </b> </button>
+                            <button id="dugme13" onclick="dugme13()"> <b>Istraživanje svih delova zamka. </b> </button>
+                            <button id="dugme14" onclick="dugme14()"> <b>Druženje sa drugim učenicima u Kući. </b> </button>
+                        </div>
+                    </div>
+
+                    <div class="pitanjeKlasa" id="pitanje2">
+                        <div class = "textpitanja">
+                            2. Koji od ovih napitaka biste najradije napravili i posedovali?
+                        </div>
+
+                        <div class = "odgovori">
+                            <button id="dugme21" onclick="dugme21()"> <b>Veritaserum</b> <br> (Nateraću ljude da govore istinu) </button>
+                            <button id="dugme22" onclick="dugme22()"> <b>Višesokovni</b> <br> (Moći ću da se pretvorim u bilo koga)</button>
+                            <button id="dugme23" onclick="dugme23()"> <b>Vigenveld</b> <br> (Koristiću ga za isceljivanje povreda)</button>
+                            <button id="dugme24" onclick="dugme24()"> <b>Amortentia</b> <br> (Manipulisaću nekog da se zaljubi u mene)</button>
+                        </div>
+                    </div>
+
+                    <div class="pitanjeKlasa" id="pitanje3">
+                        <div class = "textpitanja">
+                            3. Kad biste morali da birate, koju od ovih knjiga biste najradije pročitali?
+                        </div>
+
+                        <div class = "odgovori">
+                            <button id="dugme31" onclick="dugme31()"> <b>Hogvorts: Istorija</b> <br> (Opisuje sve važne događaje škole) </button>
+                            <button id="dugme32" onclick="dugme32()"> <b>Kvidič kroz Vekove</b> <br> (Govori o najpopularnijem čarobnjačkom sportu) </button>
+                            <button id="dugme33" onclick="dugme33()"> <b>Fantastične Zveri i Gde ih Naći</b> <br> (Opisuje sva magijska stvorenja) </button>
+                            <button id="dugme34" onclick="dugme34()"> <b>Život i Laži Albusa Dambldora</b> <br> (Kritika jednog od najboljih čarobnjaka) </button>
+                        </div>
+                    </div>
+
+                    <div class="pitanjeKlasa" id="pitanje4">
+                        <div class = "textpitanja">
+                            4. Na Hogvortsu postoje i neki izborni predmeti. Koji biste izabrali da učite?
+                        </div>
+
+                        <div class = "odgovori">
+                            <button id="dugme41" onclick="dugme41()"> <b>Briga o Magijskim Stvorenjima</b> <br> (Kako negovati i gajiti životinje)</button>
+                            <button id="dugme42" onclick="dugme42()"> <b>Aritmantija</b> <br> (Korišćenje magije brojeva u matematici) </button>
+                            <button id="dugme43" onclick="dugme43()"> <b>Drevne Rune</b> <br> (Koriste se za povećavanje moći) </button>
+                            <button id="dugme44" onclick="dugme44()"> <b>Proučavanje Normalaca</b> <br> (Kako žive obični ljudi) </button>
+                        </div>
+                    </div>
+
+                    <div class="pitanjeKlasa" id="pitanje5">
+                        <div class = "textpitanja">
+                            5. Kojim biste poslom želeli da se bavite posle završene škole?
+                        </div>
+
+                        <div class = "odgovori">
+                            <button id="dugme51" onclick="dugme51()"> <b>Auror</b> <br> (Borac protiv Mračnih Čarobnjaka) </button>
+                            <button id="dugme52" onclick="dugme52()"> <b>Ministar Magije</b> <br> (Vođa čarobnjačkog sveta ) </button>
+                            <button id="dugme53" onclick="dugme53()"> <b>Profesor na Hogvortsu</b> <br> (Predavanje učenicima i istraživanje) </button>
+                            <button id="dugme54" onclick="dugme54()"> <b>Magizoolog</b> <br> (Naučnik koji proučava magijska stvorenja) </button>
+                        </div>
+                    </div>
+
+                    <div class="pitanjeKlasa" id="pitanje6">
+                        <div class = "textpitanja">
+                            6. Postoji mnogo vrsta magije. Koja od ovih se Vama najviše sviđa?
+                        </div>
+
+                        <div class = "odgovori">
+                            <button id="dugme61" onclick="dugme61()"> <b>Legilimencija</b> <br> (Moć čitanja misli) </button>
+                            <button id="dugme62" onclick="dugme62()"> <b>Mračne Veštine</b> <br> (Najmoćnija i najokrutnija vrsta magije) </button>
+                            <button id="dugme63" onclick="dugme63()"> <b>Isceliteljska</b> <br> (Lečenje drugih Čarobnjacaka od povreda i bolesti) </button>
+                            <button id="dugme64" onclick="dugme64()"> <b>Zaštitne Čini</b> <br> (Koriste se za borbu protiv mračnih veština) </button>
+                        </div>
+                    </div>
+
+                    <div class="pitanjeKlasa" id="pitanje7">
+                        <div class = "textpitanja">
+                            7. Šešir za razvrstavanje ponekad uzima u obzir i Vaše želje.
+                        </div>
+
+                        <div class = "odgovori">
+                            <button id="dugme71" onclick="dugme71()"> <b>Grifindor!</b> </button>
+                            <button id="dugme72" onclick="dugme72()"> <b>Sliterin!</b> </button>
+                            <button id="dugme73" onclick="dugme73()"> <b>Halfpaf!</b> </button>
+                            <button id="dugme74" onclick="dugme74()"> <b>Revenklo!</b> </button>
+                        </div>
+                    </div>
+
+                    <div id="kraj"> <!-- kad se zavrsi kviz klikne se Zavrsite odgovoranje i izbacuje Kucu -->
+                        <button id="krajkviza" onclick="kraj()"> Završite odgovaranje </button>
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            <div id="sortirani"> <!-- izbaci se samo jednu od ove 4 -->
+                <div id="gryffindorWelcome">
+                    <img id="gryffWelcomeSigil" src="Slike/HarryPotter/gryffindor.png" width=40%>
+                    <h1> Grifindor! </h1>
+                    <p>
+                        Hrabrost Odvažnost Samopouzdanje Odlučnost Viteštvo Borbenost
+                    </p>
+
+                </div>
+
+                <div id="slytherinWelcome">
+                    <img id="slytherinWelcomeSigil" src="Slike/HarryPotter/slytherin.png" width=40%>
+                    <h1> Sliterin! </h1>
+                    <p>
+                        Lukavstvo Odlučnost Ambicija Snalažljivost Liderstvo Postignuće
+                    </p>
+
+                </div>
+
+                <div id="hufflepuffWelcome">
+                    <img id="hufflepuffWelcomeSigil" src="Slike/HarryPotter/hufflepuff.png" width=40%>
+                    <h1> Haflpaf! </h1>
+                    <p>
+                        Odanost Pravednost Strpljenje Marljivost Prijateljstvo Iskrenost
+                    </p>
+
+                </div>
+
+                <div id="ravenclawWelcome">
+                    <img id="ravenclawWelcomeSigil" src="Slike/HarryPotter/ravenclaw.png" width=40%>
+                    <h1> Revenklo! </h1>
+                    <p>
+                        Pamet Mudrost Kreativnost Jedinstvenost Radoznalost Nezavisnost
+                    </p>
+
+                </div>
+            </div>
+
+            <div id="vremeZaKviz"> <!-- ovde ce JQuery da nalepi ispod vreme radjenja kviza -->
+
+            </div>
+ 
+        </div>
+    </div>
+</body>
+
+</html>

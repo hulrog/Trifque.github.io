@@ -1,0 +1,67 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(80, 3, 3);
+    color: rgb(203, 206, 70);
+    font-size: 150%;
+    font-weight: 900;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+h1 , h2
+{
+    -webkit-text-stroke: 1px black;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#Menu
+{
+    height: 100px;
+    top: 0;
+    grid-column: 1/4;
+    background-color:rgb(0, 0, 0);
+    position: sticky;
+}
+
+#MenuList
+{
+    position: top;
+    text-decoration: none;
+    font-size: 100%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#MenuList li
+{
+    height: 10px;
+    margin: 0% 5%;
+}
+
+#MenuList li a
+{
+    text-decoration: rgb(155, 6, 6);
+    color: rgb(155, 6, 6);
+}
+
+#MenuNaslov
+{
+    height: 30px;
+    margin: 0px;
+    align-items: top;
+    justify-content: center;
+    display: flex;
+    color: rgb(155, 6, 6);
+}
+

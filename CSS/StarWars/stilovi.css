@@ -1,0 +1,219 @@
+body
+{
+
+    background-color: black;
+    color: rgb(192, 192, 192);
+    font-size: 170%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: start;
+    
+}
+
+#GlavniBackground
+{
+    grid-column: 1/4;
+    height: 500px;
+}
+
+.lightsaber
+{
+    width: 1fr;
+    height: 300px;
+}
+
+#Naslov
+{
+    width: 1fr;
+    height: 400px;
+}
+
+#timeline
+{
+    grid-column: 1/4;
+    height: 500px;
+}
+
+p
+{
+    font-weight: 600;
+    grid-column: 1/4;
+    margin: 150px ;
+}
+
+h2
+{
+    font-weight: 800;
+    grid-column: 1/4;
+}
+
+.IzmedjuParagrafa
+{
+    width: 400px;
+    height: 200px;
+    padding-top: 50px;
+}
+
+#periodi
+{
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 200%;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h3
+{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#Menu
+{
+    height: 100px;
+    top: 0;
+    grid-column: 1/4;
+    background-color: rgb(98, 98, 98);
+    position: sticky;
+}
+
+#MenuList
+{
+    position: top;
+    text-decoration: none;
+    font-size: 100%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#MenuList li
+{
+    height: 10px;
+    margin: 0% 5%;
+}
+
+#MenuList li a
+{
+    text-decoration: rgb(195, 195, 2);
+    color: rgb(195, 195, 2);
+}
+
+#MenuNaslov
+{
+    height: 30px;
+    margin: 0px;
+    align-items: top;
+    justify-content: center;
+    display: flex;
+}
+
+#RegrutujCarstvo
+{
+    display: none;
+    background-color: darkred;
+    /*display: flex;*/
+    flex-direction: column;
+    grid-column: 1/4;
+
+}
+
+#Podatci
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 100%;
+}
+
+#Podatci input
+{
+    width: 40%;
+    margin: 1%;
+    font-size: 100%;
+}
+
+#prijava
+{
+    font-size: 100%;
+    margin: 6%;
+}
+
+#iskustvo
+{
+    display: flex;
+    margin: 2%;
+}
+
+#mesto
+{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#mesto1, #mesto2, #mesto3, #mesto4, #mesto5
+{
+    margin:0;
+}
+
+#RegrutujPobunjenike
+{
+    display: none;
+    background-color: darkblue;
+    /*display: flex;*/
+    flex-direction: column;
+    grid-column: 1/4;
+
+}
+
+#rasa
+{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#Dugmeta
+{
+    grid-column: 1/4;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#Dugmeta button
+{
+    font-size: 150%;
+}
+
+#rasa2
+{
+    display: none;
+    width: 50%;
+    height:50%;
+}
+
+#slikeRasa
+{
+    display: flex;
+    grid-column: 1/4;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
